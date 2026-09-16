@@ -39,7 +39,7 @@
           <a class="btn btn-ghost" href="#features" data-fa="آشنایی با امکانات" data-en="Explore features">آشنایی با امکانات</a>
         </div>
         <div class="hero-meta">
-          <span class="ver-chip" id="ver-chip">v0.11.0</span>
+          <span class="ver-chip" id="ver-chip">v0.23.2</span>
           <span class="meta-item" data-fa="ویندوز ۶۴ بیتی و ARM" data-en="Windows 64-bit & ARM">ویندوز ۶۴ بیتی و ARM</span>
           <span class="meta-item" data-fa="بدون نیاز به نصب چیز اضافه" data-en="No extra prerequisites">بدون نیاز به نصب چیز اضافه</span>
         </div>
@@ -190,7 +190,7 @@
     <div class="container footer-inner">
       <div class="footer-brand">
         <img src="./assets/images/logo.png" alt="MT4 Journal" class="footer-logo" />
-        <span>MT4 Journal <span id="footer-ver">v0.11.0</span></span>
+        <span>MT4 Journal <span id="footer-ver">v0.23.2</span></span>
       </div>
       <p class="footer-made">
         <span data-fa="ساخته شده با ❤️ توسط" data-en="Made with ❤️ by">ساخته شده با ❤️ توسط</span>
@@ -201,18 +201,17 @@
 
   <script>
     (function () {
-      var VERSION = "0.11.0";
+      var VERSION = "0.23.2";
+      var base = "https://github.com/mtjournal/mtjournal.github.io/releases/download/v" + VERSION + "/";
       var files = {
-        "dl-x64": "MT4 Journal-Setup-x64-" + VERSION + ".exe",
-        "dl-arm64": "MT4 Journal-Setup-arm64-" + VERSION + ".exe",
-        "dl-combined": "MT4 Journal-Setup-" + VERSION + ".exe",
+        "dl-x64": "MT4.Journal-Setup-x64-" + VERSION + ".exe",
+        "dl-arm64": "MT4.Journal-Setup-arm64-" + VERSION + ".exe",
+        "dl-combined": "MT4.Journal-Setup-" + VERSION + ".exe",
       };
-      /* Installers are expected next to the landing folder (e.g. a copy of dist/).
-         When opened from the repo, ../dist/ works out of the box. */
-      var base = "../dist/";
+      /* Installers are served straight from the GitHub Releases assets. */
       Object.keys(files).forEach(function (id) {
         var a = document.getElementById(id);
-        if (a) a.href = base + encodeURIComponent(files[id]);
+        if (a) a.href = base + files[id];
       });
 
       var btn = document.getElementById("lang-btn");
