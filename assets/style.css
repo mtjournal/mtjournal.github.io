@@ -3,20 +3,6 @@
    ============================================================ */
 
 @font-face {
-  font-family: "Vazirmatn";
-  src: url("../fonts/Vazirmatn-Regular.woff2") format("woff2");
-  font-weight: 400;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Vazirmatn";
-  src: url("../fonts/Vazirmatn-Bold.woff2") format("woff2");
-  font-weight: 700;
-  font-display: swap;
-}
-
-@font-face {
   font-family: "Inter";
   src: url("../fonts/Inter-Regular.woff2") format("woff2");
   font-weight: 400;
@@ -529,6 +515,17 @@ html[dir="ltr"] .dl-badge {
   margin-top: 26px;
 }
 
+.dl-group-title {
+  margin: 34px 0 4px;
+  font-size: 17px;
+  font-weight: 800;
+  color: var(--accent-blue);
+}
+
+.dl-group-title:first-of-type {
+  margin-top: 26px;
+}
+
 /* ---------------- Footer ---------------- */
 .footer {
   border-top: 1px solid var(--border);
@@ -576,12 +573,6 @@ html[dir="ltr"] .dl-badge {
 }
 
 /* ---------------- RTL/LTR specifics ---------------- */
-html[dir="ltr"] .hero-desc,
-html[dir="ltr"] .section-desc {
-  margin-inline: 0;
-  margin-inline-start: auto;
-}
-
 html[dir="ltr"] .nav {
   margin-inline-start: 0;
   margin-inline-end: auto;
