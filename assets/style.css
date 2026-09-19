@@ -526,6 +526,157 @@ html[dir="ltr"] .dl-badge {
   margin-top: 26px;
 }
 
+/* ---------------- Screenshots button & modal ---------------- */
+.shots-cta {
+  text-align: center;
+  margin: -16px 0 30px;
+}
+
+.shots-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.shots-modal.open {
+  display: flex;
+}
+
+body.shots-open {
+  overflow: hidden;
+}
+
+.shots-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(5, 8, 15, 0.78);
+  backdrop-filter: blur(6px);
+}
+
+.shots-dialog {
+  position: relative;
+  z-index: 1;
+  width: min(980px, 94vw);
+  background: var(--card);
+  border: 1px solid var(--border-strong);
+  border-radius: 16px;
+  padding: 14px;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.55);
+  animation: shotsIn 0.18s ease-out;
+}
+
+@keyframes shotsIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+}
+
+.shots-close {
+  position: absolute;
+  top: -14px;
+  inset-inline-end: -14px;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: var(--card-2);
+  border: 1px solid var(--border-strong);
+  color: var(--text);
+  font-size: 19px;
+  line-height: 1;
+  cursor: pointer;
+  z-index: 2;
+  transition: background 0.15s;
+}
+
+.shots-close:hover {
+  background: var(--neg);
+  border-color: var(--neg);
+}
+
+.shots-stage {
+  position: relative;
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 220px;
+}
+
+.shots-stage img {
+  display: block;
+  max-width: 100%;
+  max-height: min(68vh, 640px);
+  width: auto;
+  height: auto;
+}
+
+.shots-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(23, 30, 48, 0.85);
+  border: 1px solid var(--border-strong);
+  color: var(--text);
+  font-size: 24px;
+  line-height: 1;
+  cursor: pointer;
+  z-index: 1;
+  transition: background 0.15s;
+}
+
+.shots-nav:hover {
+  background: var(--primary);
+  border-color: var(--primary);
+}
+
+.shots-nav.prev {
+  inset-inline-start: 12px;
+}
+
+.shots-nav.next {
+  inset-inline-end: 12px;
+}
+
+.shots-caption {
+  text-align: center;
+  color: var(--muted);
+  font-size: 13px;
+  margin-top: 10px;
+}
+
+.shots-dots {
+  display: flex;
+  justify-content: center;
+  gap: 7px;
+  margin-top: 8px;
+}
+
+.shots-dots button {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  border: none;
+  padding: 0;
+  background: var(--border-strong);
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.shots-dots button.active {
+  background: var(--primary);
+}
+
 /* ---------------- Footer ---------------- */
 .footer {
   border-top: 1px solid var(--border);
