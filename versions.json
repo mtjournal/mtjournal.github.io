@@ -2,14 +2,14 @@
   "latest": {
     "version": "0.23.8",
     "releaseDate": "2026-09-21",
-    "url": "https://github.com/mtjournal/mtjournal.github.io/releases/tag/v0.23.8",
+    "url": "https://github.com/mtjournal/mtjournal.github.io/releases/tag/v0.23.9",
     "mandatory": false
   },
   "versions": [
     {
       "version": "0.23.8",
       "releaseDate": "2026-09-21",
-      "url": "https://github.com/mtjournal/mtjournal.github.io/releases/tag/v0.23.8"
+      "url": "https://github.com/mtjournal/mtjournal.github.io/releases/tag/v0.23.9"
     },
     {
       "version": "0.23.7",
