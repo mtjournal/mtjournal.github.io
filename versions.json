@@ -1,11 +1,16 @@
 {
   "latest": {
-    "version": "0.23.7",
-    "releaseDate": "2026-09-19",
-    "url": "https://github.com/mtjournal/mtjournal.github.io/releases/tag/v0.23.7",
+    "version": "0.23.8",
+    "releaseDate": "2026-09-21",
+    "url": "https://github.com/mtjournal/mtjournal.github.io/releases/tag/v0.23.8",
     "mandatory": false
   },
   "versions": [
+    {
+      "version": "0.23.8",
+      "releaseDate": "2026-09-21",
+      "url": "https://github.com/mtjournal/mtjournal.github.io/releases/tag/v0.23.8"
+    },
     {
       "version": "0.23.7",
       "releaseDate": "2026-09-19",
@@ -14,12 +19,12 @@
     {
       "version": "0.23.4",
       "releaseDate": "2026-09-18",
-      "url": "https://github.com/mtjournal/mtjournal.github.io/releases/tag/v0.23.7"
-    }
+      "url": "https://github.com/mtjournal/mtjournal.github.io/releases/tag/v0.23.4"
+    },
     {
       "version": "0.23.2",
       "releaseDate": "2026-09-16",
-      "url": "https://github.com/mtjournal/mtjournal.github.io/releases/tag/v0.23.7"
+      "url": "https://github.com/mtjournal/mtjournal.github.io/releases/tag/v0.23.2"
     }
   ]
 }
